@@ -1,0 +1,345 @@
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    clear: both;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+@font-face  {
+    font-family: 'Hello';
+    src: url('./upload/file/latin-hello.ttf');
+}
+
+@font-face  {
+    font-family: 'Kezt';
+    src: url('./upload/file/kezt.ttf');
+}
+
+[kezt-transition1] {
+    opacity: 0;
+    position: relative;
+    top: 20px;
+    transition: opacity 2s, top 1s;
+}
+
+[kezt-transition2] {
+    opacity: 0;
+    position: relative;
+    left: 20px;
+    transition: opacity 2s, left 1s;
+}
+
+[kezt-transition3] {
+    opacity: 0;
+    position: relative;
+    right: 20px;
+    transition: opacity 2s, right 1s;
+}
+
+[kezt-transition4] {
+    opacity: 0;
+    position: relative;
+    bottom: 20px;
+    transition: opacity 2s, bottom 1s;
+}
+
+[kezt-transition5] {
+    opacity: 0;
+    position: relative;
+    transition: opacity 2s;
+}
+
+@keyframes warnaWarni {
+    0% { color: #1150cf; }
+    25% { color: #cf232b; }
+    50% { color: #278c23; }
+    75% { color: #c1b620; }
+    100% { color: #1150cf; }
+}
+
+@media (max-width: 808px) {
+    
+    header {
+        position: fixed;
+        background: #0E121D;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+        height: 30px;
+        box-shadow: 0px 0px 10px #000;
+    }
+    
+    header > .barsdesktop {
+        display: none;
+    }
+    
+    header > .headermenu {
+        
+    }
+    
+    header > .headermenu > .headermenu2 {
+        display: flex;
+        float: right;
+        margin-right: 30px;
+    }
+    
+    header > .headermenu > .headermenu2 > .barsbut {
+        font-size: 25px;
+        color: #fff;
+        position: relative;
+        
+        transition: 1s;
+    }
+    
+    header > .headermenu > img {
+        width: 40px;
+        float: left;
+    }
+    
+    header > .headermenu > .headermenu2 > .searchbut {
+        margin-right: 25px;
+        font-size: 20px;
+        color: #fff;
+        position: relative;
+        top: 3px;
+        cursor: none;
+        transition: 1s;
+    }
+    
+    header > .headermenu > .headermenu2 > .searchbut:hover {
+        transform: scale(0.9);
+    }
+    
+    header > .sidebarnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0; /* Mulai dari ketinggian nol */
+    overflow: hidden;
+    transition: height 1s ease; /* Animasi transisi untuk ketinggian */
+}
+
+header > .sidebarnav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://telegra.ph/file/f83e9dff8babe41518389.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px); /* Efek blur untuk latar belakang */
+    z-index: -1; /* Meletakkan di bawah konten utama */
+    transition: opacity 0.5s ease;
+}
+
+    header > .sidebarnav > p {
+        color: #fff;
+        font-size: 50px;
+        font-family: Kezt;
+        margin: 0;
+    }
+    
+    header > .sidebarnav > a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin: 10px;
+        cursor: none;
+        padding: 7px 5px;
+        margin-top: 10px;
+        font-weight: bold;
+        transition: 2s;
+    }
+    
+    header > .sidebarnav > a:hover {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin: 10px;
+        cursor: none;
+        background: #00000091;
+        padding: 7px 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-weight: bold;
+        animation: warnaWarni 5s linear infinite;
+        transition: 1s;
+    }
+    
+    header > .sidebarnav > .menuheader {
+        dislay: block;
+        margin-bottom: 50px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    header > .sidebarnav > .menuheader > a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: none;
+        padding: 7px 5px;
+        margin-top: 10px;
+        transition: 1s;
+    }
+    
+    .section-1 {
+        
+    }
+    
+    .section-1 > h1 {
+        font-family: "Brush Script MT", cursive;
+        font-size: 65px;
+        color: #ff2b35;
+        margin: 50px 0;
+    }
+    
+    .section-1 > h2 {
+        font-family: "Arial Rounded MT Bold", sans-serif;
+        font-size: 15px;
+        color: #000;
+        margin: 0;
+    }
+    
+    .section-1 > p {
+        font-family: "Arial Rounded MT Bold", sans-serif;
+        font-size: 10px;
+        color: #000;
+        margin: 0 10%;
+    }
+    
+    
+}
+
+
+@media (min-width: 808px) {
+    
+    header {
+        position: fixed;
+        background: #fff;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+        height: 30px;
+        box-shadow: 0px 0px 10px #000;
+    }
+    
+    header > .headermenu,
+    header > .sidebarnav {
+        display: none;
+    }
+    
+    header > .barsdesktop {
+        user-select: none;
+    }
+    
+    .barsdesktop > ul {
+        position: relative;
+        top: 5px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .barsdesktop > ul > li {
+        display: inline;
+    }
+    
+    .barsdesktop > ul > img {
+        display: inline;
+        position: relative;
+        float: left;
+        top: -5x;
+        margin-left: 10px;
+        width: 100px;
+        transition: 1s;
+    }
+    
+    .barsdesktop > ul > h1:hover {
+        display: inline;
+        position: relative;
+        float: left;
+        font-size: 20px;
+        top: -15px;
+        margin-left: 10px;
+        transform: scale(0.9);
+        transition: 1s;
+     }
+     
+    .barsdesktop > ul > li > .menuhalaman {
+        color: #000;
+        text-decoration: none;
+        cursor: none;
+        justify-content: space-between;
+        position: relative;
+        font-family: 'Nunito', sans-serif;
+        margin: 0 2% 0 2%;
+    }
+    
+    .barsdesktop > ul > li > .submenu {
+        color: #000;
+        text-decoration: none;
+        cursor: none;
+        justify-content: space-between;
+        float: right;
+        font-family: 'Nunito', sans-serif;
+        margin: 0 35px 0 5px;
+    }
+
+    .barsdesktop > ul > li > a::before,
+    .barsdesktop > ul > li > a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #000000;
+        transition: width 1s ease;
+    }
+     
+    .barsdesktop > ul > li > a::before {
+        left: 50%;
+        transform-origin: left;
+    }
+    
+    .barsdesktop > ul > li > a::after {
+        right: 50%;
+        transform-origin: right;
+    }
+    
+    .barsdesktop > ul > li > a:hover::before,
+    .barsdesktop > ul > li > a:hover::after {
+        width: 50%;
+    }
+    
+    
+    
+    
+    
+    
+}
+
